@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Alfa Slab One", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+  }
+  
+  nav h3 {
+    text-align: left;
+    color:white;
+    padding-top: 5px;
+  }
+  
+  header {
+    position: fixed;
+    text-align: right;
+    background-color:black;
+    padding: 30px;
+    width: 100%;
+    z-index: 2; 
+  }
+  
+  .home {
+    text-align: left;
+  }
+  
+  a:hover {
+    color: rgb(219, 3, 3);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .section {
+    padding: 15% 0;
+    text-align: left;
+  }
+  
+  #about text {
+    padding-right: 70px;
+  }
+  
+  .section h1 {
+    font-size: 4em;
+    margin-left: 1px;
+  }
+  
+  section h2 {
+    font-size: 2em;
+   
+  }
+  
+  .section .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .section .content .text {
+    flex: 1;
+    padding-right: auto;
+  }
+  
+  .section .content .image {
+    flex: 1;
+    padding-left: auto;
+    padding-bottom: 110px;
+    z-index: 1; 
+  }
+  
+  .section .content .image img {
+    max-width: 75%;
+  }
+  
+  .section .content .image {
+    position: relative;
+  }
+  
+  .section .content .image::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-82%, -25%);
+    height: 200px;
+    border-radius: 50%;
+    z-index: -1;
+  }
